@@ -25,7 +25,8 @@ let package = Package(
                 .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
             ]
         ),
-        .target(name: "WeakMacro"),
+        .executableTarget(name: "WeakMacroExample", dependencies: ["WeakMacro"]),
+        .target(name: "WeakMacro", dependencies: ["WeakMacroPlugin"]),
         .testTarget(name: "WeakTests", dependencies: ["WeakMacroPlugin"]),
     ]
 )

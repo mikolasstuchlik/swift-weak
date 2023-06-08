@@ -49,8 +49,3 @@ public struct WeakifyMacro: ExpressionMacro {
         return "{[weak self] \(raw: argumentList)in if let self {self.\(raw: name)(\(raw: invocationArgumentList))}}"
     }
 }
-
-class A {
-    init() {}
-    func foo(_ a: Int, _ b: Int) {}
-}

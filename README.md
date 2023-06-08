@@ -13,6 +13,6 @@ expands into:
 let a = {[weak self] _arg0, _arg1 in if let self {self.onClick(button: _arg0, _arg1)}}
 ```
 
-**Sadly it does not work, because the parameter pack trigger a compiler segault 😭**
+There is an example module `WeakMacroExample`
 
 *Also, yes. I know, I should have used `context.makeUniqueName()` :) *
