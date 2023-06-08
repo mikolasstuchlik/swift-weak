@@ -14,3 +14,5 @@ let a = {[weak self] _arg0, _arg1 in if let self {self.onClick(button: _arg0, _a
 ```
 
 **Sadly it does not work, because the parameter pack trigger a compiler segault 😭**
+
+*Also, yes. I know, I should have used `context.makeUniqueName()` :) *
